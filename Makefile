@@ -5,7 +5,13 @@ CFLAGS		:=	-Wall -Wextra -Werror
 LINKSMACOS	:=	-lmlx -framework OpenGL -framework AppKit
 
 SRCDIR		:=	sources
-SRCFILES	:=	fdf.c
+SRCFILES	:=	fdf.c \
+				free_env.c \
+				get_map.c \
+				map_to_2d.c \
+				print.c \
+				keys_functions.c
+
 SRC			:=	$(addprefix $(SRCDIR)/, $(SRCFILES))
 
 OBJDIR		:=	objects
